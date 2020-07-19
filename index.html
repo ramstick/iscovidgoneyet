@@ -2,16 +2,90 @@
 <html>
 
 <head>
-    <title>Is Covid Gone Yet?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Wire+One&display=swap" rel="stylesheet">
     <style>
+        * {
+            font-family: 'Raleway', sans-serif;
+        }
+        
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .navbar {
+            list-style: none;
+            margin: 0;
+            width: 100%;
+            padding: 10px;
+            box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.20);
+            display: flex;
+            align-items: stretch;
+            position: relative;
+        }
+        
+        .navbar li {
+            display: flex;
+            margin: 0 20px;
+            font-size: 24px;
+            font-weight: 100;
+            user-select: none;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .navbar .title {
+            font-family: 'Wire One', sans-serif;
+            font-size: 56px;
+        }
+        
+        .navbar .push-right {
+            margin-left: auto;
+        }
+        
+        .input {
+            padding: 10px;
+            font-size: 15px;
+            border: 1px lightgray solid;
+            color: #242424;
+            font-weight: 200;
+        }
+        
+        .input:focus {
+            outline: none;
+        }
+        
+        .navbar-drop-arrow {
+            transform: rotate(180deg);
+            transition: transform 2s;
+        }
+        
+        .navbar-drop-arrow.down {
+            transform: none;
+        }
+        
+        .navbar-button {
+            background-color: white;
+            transition: background-color 1s;
         }
     </style>
 </head>
 
 <body>
-    <h1>no</h1>
+    <ul class="navbar">
+        <li class="title">
+            Bork
+        </li>
+        <li class="navbar-button">
+            Shitty Stuff
+            <svg width=".6em" viewBox="0 0 16 16" style="vertical-align: middle;" class="navbar-drop-arrow" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke="black" stroke-width=".8" d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>
+        </li>
+        <li class="push-right"><input class="input" style="vertical-align: middle;" placeholder="Search"></li>
+        <li>Find</li>
+    </ul>
 </body>
 
 </html>
